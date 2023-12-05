@@ -15,6 +15,6 @@ router.post("/", controller.create);
 
 router.put("/:contactId", isValidID, controller.update);
 
-router.patch("/:contactId", isValidID, controller.updateFavorite);
+router.patch("/:contactId/favorite", isValidID, controller.updateFavorite);
 
 module.exports = router;
